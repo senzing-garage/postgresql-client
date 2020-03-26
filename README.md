@@ -2,9 +2,6 @@
 
 ## Overview
 
-This repository shows best practices for creating a `docker-*` repository.
-See [best practices](docs/best-practices.md).
-
 ### Related artifacts
 
 1. [DockerHub](https://hub.docker.com/r/senzing/xxxxxxxx)

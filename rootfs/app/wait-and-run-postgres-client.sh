@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 # Wait until the database is ready.
 

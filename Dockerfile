@@ -7,6 +7,8 @@ LABEL Name="senzing/postgresql-client" \
       Maintainer="support@senzing.com" \
       Version="1.0.0"
 
+HEALTHCHECK CMD ["/app/healthcheck.sh"]
+
 # Install packages via apk.
 
 RUN apk --update add postgresql-client \
@@ -17,9 +19,6 @@ RUN apk --update add postgresql-client \
 COPY ./rootfs /
 
 # Runtime execution.
-
-# ENTRYPOINT [ "psql" ]
-# ENTRYPOINT [ "pg_isready", "--timeout", "60" ]
 
 WORKDIR /app
 CMD ["/app/wait-and-run-postgres-client.sh"]

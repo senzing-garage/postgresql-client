@@ -1,29 +1,24 @@
-ARG BASE_IMAGE=senzing/senzing-base:1.3.0
+ARG BASE_IMAGE=alpine:3.11
 FROM ${BASE_IMAGE}
 
-ENV REFRESHED_AT=2019-11-13
+ENV REFRESHED_AT=2020-03-26
 
-LABEL Name="senzing/template" \
+LABEL Name="senzing/postgresql-client" \
       Maintainer="support@senzing.com" \
       Version="1.0.0"
 
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
 
-# Run as "root" for system installation.
+# Install packages via apk.
 
-USER root
-
-# Install packages via apt.
+RUN apk --update add postgresql-client \
+ && rm -rf /var/cache/apk/*
 
 # Copy files from repository.
 
 COPY ./rootfs /
 
-# Make non-root container.
-
-USER 1001
-
 # Runtime execution.
 
 WORKDIR /app
-CMD ["/app/sleep-infinity.sh"]
+CMD ["/app/wait-and-run-postgres-client.sh"]

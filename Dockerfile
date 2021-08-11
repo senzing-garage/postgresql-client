@@ -1,11 +1,11 @@
 ARG BASE_IMAGE=alpine:3.11
 FROM ${BASE_IMAGE}
 
-ENV REFRESHED_AT=2020-03-26
+ENV REFRESHED_AT=2021-08-11
 
 LABEL Name="senzing/postgresql-client" \
       Maintainer="support@senzing.com" \
-      Version="1.0.0"
+      Version="1.1.0"
 
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
 

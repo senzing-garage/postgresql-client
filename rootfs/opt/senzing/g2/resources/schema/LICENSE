@@ -1,0 +1,415 @@
+Senzing
+
+END USER LICENSE AGREEMENT
+This End User License Agreement and the Third Party Software Components (Appendix A) (collectively, "Senzing 
+EULA"), govern the use of the entity resolution and relationship awareness engine in Object Code format that 
+accompanies this Senzing EULA and that is owned or licensable by Senzing, Inc. ("Licensor"), including any 
+updates that Licensor may choose to provide (collectively, "Licensor Software"), with such use being solely by the 
+person or entity ("you" or "your") that has agreed with the terms of this Senzing EULA.
+
+IF YOU DO NOT AGREE WITH THE TERMS OF THIS SENZING EULA, YOU MUST NOT USE THE 
+SOFTWARE. YOU HEREBY REPRESENT TO LICENSOR THAT YOU ARE A NATURAL PERSON, YOU ARE 
+OVER EIGHTEEN (18) YEARS OF AGE, THAT YOU MAY LEGALLY ENTER INTO THIS AGREEMENT, AND 
+THAT YOU AGREE WITH ALL THE TERMS OF THIS SENZING EULA.
+
+1.	GRANT OF LICENSE.
+
+1.1	Licensor Software Packages. When you enter into this Senzing EULA, you have the opportunity 
+to select a particular Licensor Software package (each, a "Licensor Software Package") as 
+provided below, subject to the limitations described therein:
+
+A.	Senzing App License; or
+B.	Senzing API License.
+
+The term of this Senzing EULA ("Term") shall commence on the date the Licensor Software is 
+delivered and shall remain in effect for the subscription period set forth in the corresponding 
+Licensor Software Package you selected, subject to earlier termination as set forth in SECTION 5 
+("TERMINATION").
+
+1.2	Senzing App License.  If you have selected a "Senzing App License" pursuant to Subsection 1.1 
+("Licensor Software Packages") above, then subject to all other terms of this Senzing EULA, 
+Licensor hereby grants you a nonexclusive, non-transferable license (without the right to grant 
+sublicenses) to use the Licensor Software solely as follows: (i) solely for the license period 
+designated therein, subject to SECTION 5 ("TERMINATION"); (ii) solely for one (1) Concurrent 
+User; (iii) solely for up to the number of DSRs designated therein; and (iv) solely for any internal 
+productive use or externally-focused products and services. You understand and agree that this 
+Senzing App License does not include any right to distribute Licensor Software, and that in all 
+cases Licensor Software must be installed and used solely on hardware owned or controlled by 
+you. You understand and agree that Senzing App Licenses may have automatic timers or "time 
+bombs," and therefore may automatically cease to function after the end of the corresponding 
+license period but paid for Senzing App Licenses shall be subject to at least a thirty (30) day 
+"grace period" providing a margin beyond the permitted time period. You also understand and 
+agree that Senzing App Licenses have DSR limiters but paid for Senzing App Licenses shall be 
+subject to at least a ten percent (10%) "buffer" providing a margin over the permitted volume of 
+DSRs.
+
+1.3	Senzing API License.  If you have selected a "Senzing API License" pursuant to Subsection 1.1 
+("Licensor Software Packages") above, then subject to all other terms of this Senzing EULA, 
+including without limitation your obligation to make timely payment to Licensor, Licensor hereby 
+grants you a nonexclusive, non-transferable license (without the right to grant sublicenses) to use 
+the Licensor Software solely as follows:
+
+A.	Senzing API Non-Production License. (i) solely for the license period designated therein, 
+subject to SECTION 5 ("TERMINATION"); (ii) solely for up to the number of DSRs 
+designated therein; and (iii) solely for non-productive use in order to integrate and test the 
+Licensor Software for future productive use (e.g., in your production environment). You 
+understand and agree that Senzing API Non-Production Licenses may have automatic 
+timers or "time bombs," and therefore may automatically cease to function after the end of 
+the corresponding license period but paid for Senzing API Non-Production Licenses shall 
+be subject to at least a thirty (30) day "grace period" providing a margin beyond the 
+permitted time period. You also understand and agree that Senzing API Non-Production 
+Licenses have DSR limiters but paid for Senzing API Non-Production Licenses shall be 
+subject to at least ten percent (10%) "buffer" providing a margin over the permitted 
+volume of DSRs.
+
+B.	Senzing API Production License. (i) solely for the license period designated therein, 
+subject to SECTION 5 ("TERMINATION"); (ii) solely for up to the number of DSRs 
+designated therein; (iii) for use in one (1) and only one (1) project whether this be an 
+internal project (e.g., servicing your employees) or an externally-focused project (e.g., 
+delivering a service to your customers); and (iv) for any internal productive use or 
+externally-focused products and services, so long as the Licensor Software shall be 
+combined with additional material functionality when provided to your customers (i.e., you 
+shall not use the Licensor Software to provide data-matching, data quality, data wrangling 
+or "Extract, Transform and Load" ("ETL") stand-alone products or services). You 
+understand and agree that this Senzing API Production License does not include any 
+right to distribute the Licensor Software, and that in all cases Licensor Software must be 
+installed and used solely on hardware owned or controlled by you. You understand and 
+agree that Senzing API Production Licenses may have automatic timers or "time bombs," 
+and therefore may automatically cease to function after the end of the corresponding 
+license period but shall be subject to at least a ninety (90) day "grace period" providing a 
+margin beyond the permitted time period. You also understand and agree that Senzing 
+API Production Licenses have DSR limiters but shall be subject to at least a ten percent 
+(10%) "buffer" providing a margin over the permitted volume of DSRs. In addition, if you 
+have selected a paid for annual Senzing API Production License, then each such License 
+comes with three (3) years of "price protection," meaning that if Licensor increases its list 
+price as reflected on Licensor's website, any such price increase will not affect you for 
+three (3) years from the date upon which such list price was updated. You may copy, 
+install, and use the Licensor Software at no additional charge for the following 
+purposes:  for testing, developing, training, archiving, back-up, and for maintaining and 
+performing disaster recovery testing and actual disaster recovery operation (including, 
+loading of the Licensor Software on a hot back-up or disaster recovery site), regardless of 
+the environment utilized.  Such uses shall not independently exceed the Senzing API 
+Production License limitations.
+
+1.4	License Rights and Restrictions. The license granted in this SECTION 1 ("GRANT OF 
+LICENSE") is subject to the following: (a) you shall not allow any third party to access, use or 
+copy the Licensor Software; (b) you shall not adapt, alter, modify, translate or create derivative 
+works of the Licensor Software or documentation, or create any unauthorized copies thereof; (c) 
+you shall not cause or permit use of the Licensor Software for unlawful purposes which would 
+constitute a felony or crime or violate fundamental human rights guaranteed under the United 
+Nations Universal Declaration of Human Rights; (d) you shall not cause or permit reverse 
+assembling, reverse compiling, translating or otherwise attempting to discover the Source Code 
+from all or any portion of the Licensor Software, except as permitted by the national or regional 
+law of the places where you do business (without the opportunity for contractual waiver), and then 
+only with respect to the particular copy of Object Code incorporated into that Licensor Software; 
+(e) you shall not copy any ideas, features, functions or  graphics of the Licensor Software; (f) you 
+shall not delete, remove or modify any patent, copyright, trademark or other proprietary rights 
+notices which appear on or in the Licensor Software or documentation; (g) you shall not assign, 
+sublicense, distribute, lease, rent or otherwise transfer the Licensor Software in a manner 
+inconsistent with the rights and restrictions set forth herein; and (h) third party software 
+component limitations described in Section 1.9 ("THIRD-PARTY SOFTWARE COMPONENT 
+LIMITATIONS").
+
+1.5	Delivery. Licensor shall deliver the Licensor Software to you via download. Licensor Software is 
+deemed accepted by you upon delivery, but subject to the warranty provisions of this Senzing 
+EULA.
+
+1.6	Audits.  Unless you have entered into license terms permitting unlimited DSRs, then upon 
+reasonable notice from Licensor during the Term and for six (6) months thereafter, you agree to 
+permit Licensor or its representatives to audit and obtain copies of your written and electronic 
+records regarding your use of the Licensor Software.  Any such audit will take place only during 
+normal business hours.  In conducting such audit, Licensor and its representatives shall comply 
+with your commercially reasonable internal security measures.  Where legal requirements do not 
+allow such audit by Licensor or its representatives, however, you hereby agree to conduct such 
+audit yourself in the form of a self-assessment under Licensor's direction (and to provide Licensor 
+the foregoing copies).  Any such audits shall not be conducted more than on a quarterly basis.  
+Where any such audit reveals any underpayment to Licensor, you shall pay such underpaid 
+amount upon notice from Licensor.
+
+1.7	Functionality. With respect to any use of the Licensor Software, you agree to independently 
+confirm that the Licensor Software is suitable for use in your business and for your business 
+purposes. You acquire no rights or licenses in the Licensor Software except those expressly 
+granted herein. You hereby acknowledge that the Licensor Software is the confidential 
+information of Licensor.
+
+1.8	Third Party Software Sublicenses. The Licensor Software licensed to you may contain material 
+provided by a third party ("Sublicensed Software" provided to Licensor by a "Provider of 
+Sublicensed Software"). Accordingly, the parties agree that: (a) Licensor Software is licensed, not 
+sold, and except for the license granted herein above, neither the Provider of Sublicensed 
+Software nor Licensor passes any right, title or interest in or to the Sublicensed Software to you; 
+(b) any warranties provided under this Senzing EULA are provided solely by Licensor and not by 
+any Provider of Sublicensed Software; (c) the obligations described in SECTION 3 (INDEMNITY) 
+and SECTION 4 (LIMITED WARRANTY AND DISCLAIMER) shall not apply to the Providers of 
+Sublicensed Software; (d) the protections and limitations described in SECTION 4 (LIMITED 
+WARRANTY AND DISCLAIMER) and SECTION 6 (LIMITATION OF LIABILITY) apply to 
+Providers of Sublicensed Software to the same extent such provisions apply to Licensor; and (e) 
+each Provider of Sublicensed Software is an intended third-party beneficiary of the Senzing EULA 
+and any rights of indemnification.
+
+1.9	Third Party Software Component Limitations. Components of third party software as described 
+in Appendix A ("Third Party Software Components") may not be: (a) used for any purpose other 
+than to enable any application you create; (b) copied (except for backup purposes); (c) further 
+distributed or transferred; or (d) reverse assembled, reverse compiled, or otherwise translated 
+except as specifically permitted by law and without the possibility of contractual waiver.
+2.	RESTRICTIONS ON BENCHMARKS. You may not use the Licensor Software without Senzing's prior 
+written consent for publishing performance information or comparisons, except to the extent that such 
+activity is specifically permitted by law.
+
+3.	INDEMNITY.
+
+3.1	Application. If you have selected a paid for License, the following applies to you:
+
+A.	Licensor shall defend, indemnify, and hold you harmless from and against any claims, 
+damages, losses, costs, and expenses, including reasonable attorneys' fees, arising out 
+of any action by a third party that is based upon a claim that the Licensor Software as 
+provided by Licensor directly infringes or otherwise directly violates the intellectual 
+property rights of any person or entity.
+
+B.	If your use of the Licensor Software is held to constitute direct infringement and is 
+enjoined by a court of competent jurisdiction, Licensor may at its option and expense: (i) 
+procure for you the right to continue using the Licensor Software; or (ii) replace or modify 
+the same with Software that is non-infringing and provides equivalent functionality 
+acceptable to you.
+
+C.	Licensor's obligation to indemnify you under this SECTION 3 ("INDEMNITY") shall not 
+apply if the alleged infringement is based upon your unauthorized modification of the 
+Licensor Software or the use of the Licensor Software in combination with other software 
+or devices, where such combination caused the infringement and where infringement 
+would not have occurred from your use of the Licensor Software alone.
+
+3.2	Limitation. The foregoing states Licensor's sole liability and your sole remedy for any claim of 
+intellectual property infringement, misappropriation or similar claims.
+
+4.	LIMITED WARRANTY AND DISCLAIMER.
+
+4.1	Open Source Warranty. Licensor hereby warrants to you that the Licensor Software, as 
+delivered by Licensor, does not contain any software licensed under an agreement that requires 
+you to do any of the following as a condition of use of the Licensor Software itself or of other 
+software incorporated into, derived from or distributed with the Licensor Software (each 
+an "OSS Program"): (a) make available any Source Code, Object Code or design information 
+regarding an OSS Program; (b) grant any permission to create modifications to or derivative 
+works of an OSS Program; or (c) grant any royalty-free licenses under your intellectual property 
+rights in and to an OSS Program. Licensor further represents and warrants that it will not, via an 
+update or otherwise, incorporate any OSS Program into any version of the Licensor Software in a 
+manner that is inconsistent with the terms of this Senzing EULA.
+
+4.2	Performance Warranty. Licensor hereby warrants to you that the Licensor Software will conform 
+in ordinary use to Licensor's published specifications. In the event of a breach of the foregoing 
+warranty, Licensor shall correct any corresponding defect in the Licensor Software and provide 
+corrected Licensor Software to you promptly. If Licensor is unable to do so, you may terminate 
+your license, and cease all use of the Licensor Software, and in such case Licensor shall refund 
+to you upon your request any prepaid and unused fees under your corresponding license for such 
+Licensor Software. The foregoing states Licensor's sole liability and your sole remedy for breach 
+of this performance warranty or any defects in the Licensor Software.
+
+4.3	Right to Grant License. Licensor hereby warrants to you that it has the right to grant the license 
+under this Senzing EULA.
+
+4.4	Disclaimer. OTHER THAN AS STATED IN THIS SECTION 4 ("LIMITED WARRANTY AND 
+DISCLAIMER") AND AS OTHERWISE PROVIDED BY LAW, THE SOFTWARE AND ALL 
+OTHER ITEMS AND SERVICES ARE PROVIDED ON AN "AS IS" BASIS, WITHOUT 
+WARRANTY. IN PARTICULAR, ANY AND ALL WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NONINFRINGEMENT ARE 
+EXPRESSLY EXCLUDED. YOU SHALL NOT HAVE THE RIGHT TO MAKE OR PASS ON, AND 
+SHALL TAKE ALL MEASURES NECESSARY TO ENSURE, THAT NEITHER YOU NOR ANY OF 
+YOUR SUBSIDIARIES, AGENTS OR EMPLOYEES SHALL MAKE OR PASS ON, ANY 
+EXPRESS OR IMPLIED WARRANTY OR REPRESENTATION ON BEHALF OF LICENSOR OR 
+ANY PROVIDER OF SUBLICENSED SOFTWARE.
+
+5.	TERMINATION.
+
+5.1	Termination for Material Breach. Licensor may terminate this Senzing EULA immediately upon 
+written notice for your material breach, which material breach has remained uncured for a period 
+of ten (10) days from the date of delivery of written notice thereof to you.
+
+5.2	Effect. In the event of any expiration or termination of this Senzing EULA as hereinabove 
+provided, all corresponding licenses granted by Licensor hereunder shall immediately terminate, 
+and you shall immediately return to Licensor all material belonging to Licensor and you shall 
+promptly certify to Licensor in writing that you have done so.
+
+6.	LIMITATION OF LIABILITY.
+6.1	Statement. OTHER THAN AS TO THE DAMAGES ARISING UNDER THE INDEMNITY 
+OBLIGATION HEREIN AND TO THE EXTENT PERMITTED BY APPLICABLE LAW, NEITHER 
+PARTY SHALL BE LIABLE TO THE OTHER PARTY OR ANY THIRD PARTY FOR ANY LOSS 
+OF USE, INTERRUPTION OF BUSINESS OR ANY INDIRECT, SPECIAL, INCIDENTAL, 
+PUNITIVE OR CONSEQUENTIAL DAMAGES OF ANY KIND (INCLUDING DIRECT AND 
+INDIRECT LOST PROFITS) REGARDLESS OF THE FORM OF ACTION, WHETHER IN 
+CONTRACT OR TORT (INCLUDING NEGLIGENCE, STRICT PRODUCT LIABILITY OR 
+OTHERWISE), EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE PARTIES 
+UNDERSTAND AND AGREE THAT LICENSOR'S INDEMNITY OBLIGATIONS UNDER THIS 
+SENZING EULA SHALL NOT EXCEED THE AMOUNTS ACTUALLY PAID BY YOU TO 
+LICENSOR IN THE ONE (1) YEAR PERIOD IMMEDIATELY PRECEDING THE FIRST EVENT 
+GIVING RISE TO SUCH OBLIGATION. SUBJECT TO THE FOREGOING, OTHER THAN FOR 
+ANY EXCEEDING OF THE SCOPE OF THE LICENSE GRANTED HEREIN OR BREACH OF 
+CONFIDENTIALITY OBLIGATIONS, IN NO EVENT SHALL EITHER PARTY'S TOTAL LIABILITY 
+UNDER THIS SENZING EULA EXCEED ONE THOUSAND DOLLARS ($1,000).
+6.2	False Positives and False Negatives. NOTWITHSTANDING ANYTHING TO THE CONTRARY 
+IN THIS SENZING EULA, IN NO EVENT SHALL SENZING HAVE ANY LIABILITY FOR 
+RESULTS OF THE USE OF THE SOFTWARE THAT PRODUCE, IN WHOLE OR IN PART, A: (i) 
+FALSE INDICATION OF A POSITIVE RESULT, WHERE A NEGATIVE RESULT IS ACTUALLY 
+CORRECT; OR (ii) FALSE INDICATION OF A NEGATIVE RESULT, WHERE A POSITIVE 
+RESULT IS ACTUALLY CORRECT.
+
+7.	TAXES.
+
+In addition to any other payments due under this Senzing EULA, you agree to pay, and to indemnify and 
+hold Licensor harmless from, any sales, use, excise, import or export, value added, or similar tax or duty 
+not based on Licensor's net income.
+
+8.	NO PUBLICITY.
+
+Each party agrees that it shall not disclose the existence or terms of this Senzing EULA, or the nature of 
+the business relationship between the parties, other than as required by law, without the prior, written 
+permission of the other party.
+
+9.	SURVIVAL.
+
+In the event of any expiration or  termination  of  this  Senzing EULA,  the  provisions  of Subsection 1.8 
+("Third Party Sublicenses"), Subsection 3.2 ("Limitation"), Subsection 4.4 ("Disclaimer"), Subsection 5.2 
+("Effect"), SECTION 6 ("LIMITATION OF LIABILITY"), SECTION 7 ("TAXES"), SECTION 8 ("NO 
+PUBLICITY"), SECTION 9 ("SURVIVAL"), SECTION 10 ("GENERAL") and SECTION 11 
+("DEFINITIONS") shall survive and shall continue to bind the parties.
+
+
+10.	GENERAL.
+
+10.1	Law and Jurisdiction. This Senzing EULA shall be governed in all respects by the laws of the 
+United States of America and the State of Delaware without regard to conflicts of law principles. 
+The parties agree that the United Nations Convention on Contracts for the International Sale of 
+Goods shall not apply to this Agreement.
+
+10.2	Attorneys' Fees. In the event any proceeding or lawsuit is brought by Licensor or you in 
+connection with this Senzing EULA, the prevailing party in such proceeding shall be entitled to 
+receive its costs, expert witness fees and reasonable attorneys' fees, including costs and fees on 
+appeal as permitted by applicable law.
+
+10.3	Notices. All notices permitted or required under this Senzing EULA shall be emailed with return 
+receipt requested.
+
+10.4	No Agency. Nothing contained herein shall be construed as creating any agency, partnership or 
+other form of joint enterprise between the parties.
+
+10.5	Force Majeure. Neither party shall be liable hereunder by reason of any failure or delay in the 
+performance of its obligations hereunder (except for the payment of money) on account of strikes, 
+shortages, riots, insurrection, fires, flood, storm, explosions, acts of God, war, governmental 
+action, labor conditions, earthquakes, material shortages or any other cause which is beyond the 
+reasonable control of such party.
+
+10.6	Waiver. The failure of either party to require performance by the other party of any provision 
+hereof shall not affect the full right to require such performance at any time thereafter, nor shall 
+the waiver by either party of a breach of any provision hereof be taken or held to be a waiver of 
+the provision itself.
+
+10.7	Severability.  In the event that any provision of this Senzing EULA shall be unenforceable  or 
+invalid under any applicable law or be so held by applicable court decision, such unenforceability 
+or invalidity shall not render this Senzing EULA unenforceable or invalid as a whole, and, in such 
+event, such provision shall be changed and interpreted so as to best accomplish the objectives of 
+such unenforceable or invalid provision within the limits of applicable law or applicable court 
+decisions.
+
+10.8	Headings. The section headings appearing in this Senzing EULA are inserted only as a matter of 
+convenience and in no way define, limit, construe or describe the scope or extent of such section 
+or in any way affect this Senzing EULA.
+
+10.9	Assignment. Either party may, upon notice, assign this Senzing EULA in whole in the course of 
+any merger, acquisition, sale of equity or assets or similar transaction.
+
+10.10	Third Party Rights. This Senzing EULA does not confer any rights on any person or party (other 
+than the parties to this Senzing EULA and where applicable, their successors and permitted 
+assigns) pursuant to the U.K. Contracts (Rights of Third Parties) Act 1999.
+
+10.11	Entire Agreement. This Senzing EULA completely and exclusively states the agreement of the 
+parties regarding its subject matter. This Senzing EULA supersedes, and its terms govern, all 
+prior proposals, agreements, or other communications between the parties, oral or written, 
+regarding such subject matter. This Senzing EULA shall not be modified except by a 
+subsequently dated written amendment or exhibit signed on behalf of Licensor and you by their 
+duly authorized representatives. Any purported oral modification of this Senzing EULA shall have 
+no effect.
+
+11.	DEFINITIONS.
+
+*	"Concurrent Users" shall mean human beings running any component of the Licensor Software at 
+the same time.
+*	"DSRs" shall mean data source records (e.g. the number of records in a customer database each 
+with a distinct customer number).
+*	"Licensor Software" shall have the meaning assigned to it in the first paragraph of this Senzing 
+EULA. 
+*	"Licensor Software Package" shall have the meaning assigned to it in Subsection 1.1 ("Licensor 
+Software Packages").
+*	"Object Code" shall mean computer software compiled in binary machine-readable form and those 
+associated human readable files that are customarily distributed with executable files, such as 
+user configurable Source Code (e.g., C++ headers, shell scripts), user documentation, notices, 
+and other end-user materials. Object Code does not include the form of computer software that is 
+used by programmers to create or edit software.
+*	"OSS Program" shall have the meaning assigned to it in Subsection 4.1 ("Open Source 
+Warranty").
+*	"Providers of Sublicensed Software" shall have the meaning assigned to it in Subsection 1.8 
+("Third Party Sublicenses").
+*	 "Software" shall have the meaning assigned to it in the first paragraph of this Agreement. 
+*	"Software Package" shall have the meaning assigned to it in Subsection 1.1 ("Software 
+Packages").
+*	"Source Code" shall mean a collection of computer programming statements or declarations 
+written in a human-readable form that does not include software that is in Object Code form. 
+*	"Sublicensed Software" shall have the meaning assigned to it in Subsection 1.8 ("Third Party 
+Sublicenses").
+*	"Term" shall have the meaning assigned to it in Subsection 1.1 ("Licensor Software Packages").
+
+
+Please direct any questions or comments about the Licensor Software to: Senzing, Inc. at 
+support@senzing.com.
+SENZING is a registered trademark of Senzing, Inc. and may not be used without prior written permission.
+
+
+Last updated: September 2020
+ 
+Appendix A
+Third Party Software Components
+
+
+Components of third party software for purposes of Section 1.9 consist of the following program and supporting 
+programs:
+
+1.	Program: 			IBM Data Server Runtime Client 
+
+2.	Supporting Programs:	
+ 
+IBM Data Server Driver for JDBC and SQLJ  
+ 
+IBM Data Server Drivers for ODBC and CLI  
+ 
+IBM Global Security Toolkit 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ACTIVE 42999141v2
+ACTIVE 43161857v1

@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 [markdownlint](https://dlaa.me/markdownlint/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2021-08-17
+
+### Added to 1.1.1
+
+- Added to `/app/insert-senzing-configuration.sql`
+  - Insert into SYS_VARSs
+
 ## [1.1.0] - 2021-08-11
 
 ### Added to 1.1.0

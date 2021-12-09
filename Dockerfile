@@ -1,7 +1,7 @@
 ARG BASE_IMAGE=alpine:3.14.2
 FROM ${BASE_IMAGE}
 
-ENV REFRESHED_AT=2021-10-11
+ENV REFRESHED_AT=2021-12-07
 
 LABEL Name="senzing/postgresql-client" \
       Maintainer="support@senzing.com" \

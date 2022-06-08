@@ -6,9 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 [markdownlint](https://dlaa.me/markdownlint/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.3] - 2022-06-08
+## [2.1.0] - 2022-06-08
 
-### Changed in 2.0.3
+### Changed in 2.1.0
 
 - Upgrade `Dockerfile` to `FROM alpine:3.16.0@sha256:686d8c9dfa6f3ccfc8230bc3178d23f84eeaf7e457f36f271ab1acc53015037c`
 
@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed in 2.0.2
 
-- No changes.
+- Last release supporting `senzingdata-v2`.
 
 ## [2.0.1] - 2021-04-07
 

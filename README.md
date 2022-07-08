@@ -69,6 +69,8 @@ This repository assumes a working knowledge of:
     ```
 
 1. List SQL files.
+   *Note:* the example uses files that are "baked-in" the container.
+   Any other SQL file must be on a mounted volume.
    Example:
 
     ```console

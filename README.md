@@ -50,22 +50,22 @@ This repository assumes a working knowledge of:
 ## Demonstrate using Docker
 
 1. :pencil2: Specify database.
-   *Note:* `DATABASE_HOST` cannot be "localhost".  It must be an IP address or a hostname that can be resolved.
+   *Note:* `POSTGRES_HOST` cannot be "localhost".  It must be an IP address or a hostname that can be resolved.
    Example:
 
     ```console
-    export DATABASE_USERNAME=postgres
-    export DATABASE_PASSWORD=postgres
-    export DATABASE_HOST=senzing-postgresql
-    export DATABASE_PORT=5432
-    export DATABASE_DATABASE=G2
+    export POSTGRES_USERNAME=postgres
+    export POSTGRES_PASSWORD=postgres
+    export POSTGRES_HOST=senzing-postgresql
+    export POSTGRES_PORT=5432
+    export POSTGRES_DB=G2
     ```
 
 1. Construct Database URL.
    Example:
 
     ```console
-    export SENZING_DATABASE_URL="postgresql://${DATABASE_USERNAME}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DATABASE}"
+    export SENZING_DATABASE_URL="postgresql://${POSTGRES_USERNAME}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}"
     ```
 
 1. List SQL files.
@@ -89,6 +89,18 @@ This repository assumes a working knowledge of:
     ```
 
 ## Demonstrate using docker-compose
+
+1. :pencil2: Specify database.
+   *Note:* `POSTGRES_HOST` cannot be "localhost".  It must be an IP address or a hostname that can be resolved.
+   Example:
+
+    ```console
+    export POSTGRES_USERNAME=postgres
+    export POSTGRES_PASSWORD=postgres
+    export POSTGRES_HOST=senzing-postgresql
+    export POSTGRES_PORT=5432
+    export POSTGRES_DB=G2
+    ```
 
 1. Bring up docker-compose formation.
    Example:

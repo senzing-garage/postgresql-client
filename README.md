@@ -53,7 +53,6 @@ This repository assumes a working knowledge of:
    Example:
 
     ```console
-    export DATABASE_PROTOCOL=postgresql
     export DATABASE_USERNAME=postgres
     export DATABASE_PASSWORD=postgres
     export DATABASE_HOST=senzing-postgresql
@@ -65,7 +64,7 @@ This repository assumes a working knowledge of:
    Example:
 
     ```console
-    export SENZING_DATABASE_URL="${DATABASE_PROTOCOL}://${DATABASE_USERNAME}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DATABASE}"
+    export SENZING_DATABASE_URL="postgresql://${DATABASE_USERNAME}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DATABASE}"
     ```
 
 1. List SQL files.
@@ -80,8 +79,8 @@ This repository assumes a working knowledge of:
 
     ```console
     sudo docker run \
-      --env SENZING_DATABASE_URL=${SENZING_DATABASE_URL} \
-      --env SENZING_SQL_FILES=${SENZING_SQL_FILES} \
+      --env SENZING_DATABASE_URL="${SENZING_DATABASE_URL}" \
+      --env SENZING_SQL_FILES="${SENZING_SQL_FILES}" \
       --rm \
       senzing/postgresql-client
     ```

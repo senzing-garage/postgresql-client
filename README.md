@@ -14,14 +14,7 @@
     1. [Time](#time)
     1. [Background knowledge](#background-knowledge)
 1. [Demonstrate using Docker](#demonstrate-using-docker)
-    1. [Initialize Senzing](#initialize-senzing)
-    1. [Configuration](#configuration)
-    1. [Volumes](#volumes)
-    1. [Docker network](#docker-network)
-    1. [Docker user](#docker-user)
-    1. [External database](#external-database)
-    1. [Database support](#database-support)
-    1. [Run docker container](#run-docker-container)
+1. [Demonstrate using docker-compose](#demonstrate-using-docker-compose)
 1. [Develop](#develop)
     1. [Prerequisite software](#prerequisite-software)
     1. [Clone repository](#clone-repository)
@@ -56,177 +49,65 @@ This repository assumes a working knowledge of:
 
 ## Demonstrate using Docker
 
-### Initialize Senzing
-
-1. If Senzing has not been initialized, visit
-   "[How to initialize Senzing with Docker](https://github.com/Senzing/knowledge-base/blob/main/HOWTO/initialize-senzing-with-docker.md)".
-
-### Configuration
-
-Configuration values specified by environment variable or command line parameter.
-
-- **[SENZING_DATA_VERSION_DIR](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_data_version_dir)**
-- **[SENZING_DATABASE_URL](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_database_url)**
-- **[SENZING_DEBUG](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_debug)**
-- **[SENZING_ETC_DIR](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_etc_dir)**
-- **[SENZING_G2_DIR](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_g2_dir)**
-- **[SENZING_NETWORK](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_network)**
-- **[SENZING_RUNAS_USER](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_runas_user)**
-- **[SENZING_VAR_DIR](https://github.com/Senzing/knowledge-base/blob/main/lists/environment-variables.md#senzing_var_dir)**
-
-### Volumes
-
-1. :pencil2: Specify the directory containing the Senzing installation.
-   Use the same `SENZING_VOLUME` value used when performing
-   "[How to initialize Senzing with Docker](https://github.com/Senzing/knowledge-base/blob/main/HOWTO/initialize-senzing-with-docker.md)".
-   Example:
-
-    ```console
-    export SENZING_VOLUME=/opt/my-senzing
-    ```
-
-    1. Here's a simple test to see if `SENZING_VOLUME` is correct.
-       The following commands should return file contents.
-       Example:
-
-        ```console
-        cat ${SENZING_VOLUME}/g2/g2BuildVersion.json
-        cat ${SENZING_VOLUME}/data/3.0.0/libpostal/data_version
-        ```
-
-    1. :warning:
-       **macOS** - [File sharing](https://github.com/Senzing/knowledge-base/blob/main/HOWTO/share-directories-with-docker.md#macos)
-       must be enabled for `SENZING_VOLUME`.
-    1. :warning:
-       **Windows** - [File sharing](https://github.com/Senzing/knowledge-base/blob/main/HOWTO/share-directories-with-docker.md#windows)
-       must be enabled for `SENZING_VOLUME`.
-
-1. Identify the `data_version`, `etc`, `g2`, and `var` directories.
-   Example:
-
-    ```console
-    export SENZING_DATA_VERSION_DIR=${SENZING_VOLUME}/data/3.0.0
-    export SENZING_ETC_DIR=${SENZING_VOLUME}/etc
-    export SENZING_G2_DIR=${SENZING_VOLUME}/g2
-    export SENZING_VAR_DIR=${SENZING_VOLUME}/var
-    ```
-
-### Docker network
-
-:thinking: **Optional:**  Use if docker container is part of a docker network.
-
-1. List docker networks.
-   Example:
-
-    ```console
-    sudo docker network ls
-    ```
-
-1. :pencil2: Specify docker network.
-   Choose value from NAME column of `docker network ls`.
-   Example:
-
-    ```console
-    export SENZING_NETWORK=*nameofthe_network*
-    ```
-
-1. Construct parameter for `docker run`.
-   Example:
-
-    ```console
-    export SENZING_NETWORK_PARAMETER="--net ${SENZING_NETWORK}"
-    ```
-
-### Docker user
-
-:thinking: **Optional:**  The docker container runs as "USER 1001".
-Use if a different userid (UID) is required.
-
-1. :pencil2: Manually identify user.
-   User "0" is root.
-   Example:
-
-    ```console
-    export SENZING_RUNAS_USER="0"
-    ```
-
-   Another option, use current user.
-   Example:
-
-    ```console
-    export SENZING_RUNAS_USER=$(id -u)
-    ```
-
-1. Construct parameter for `docker run`.
-   Example:
-
-    ```console
-    export SENZING_RUNAS_USER_PARAMETER="--user ${SENZING_RUNAS_USER}"
-    ```
-
-### External database
-
-:thinking: **Optional:**  Use if storing data in an external database.
-If not specified, the internal SQLite database will be used.
-
 1. :pencil2: Specify database.
+   *Note:* `POSTGRES_HOST` cannot be "localhost".  It must be an IP address or a hostname that can be resolved.
    Example:
 
     ```console
-    export DATABASE_PROTOCOL=postgresql
-    export DATABASE_USERNAME=postgres
-    export DATABASE_PASSWORD=postgres
-    export DATABASE_HOST=senzing-postgresql
-    export DATABASE_PORT=5432
-    export DATABASE_DATABASE=G2
+    export POSTGRES_USERNAME=postgres
+    export POSTGRES_PASSWORD=postgres
+    export POSTGRES_HOST=senzing-postgresql
+    export POSTGRES_PORT=5432
+    export POSTGRES_DB=G2
     ```
 
 1. Construct Database URL.
    Example:
 
     ```console
-    export SENZING_DATABASE_URL="${DATABASE_PROTOCOL}://${DATABASE_USERNAME}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DATABASE}"
+    export SENZING_DATABASE_URL="postgresql://${POSTGRES_USERNAME}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}"
     ```
 
-1. Construct parameter for `docker run`.
+1. List SQL files.
+   *Note:* the example uses files that are "baked-in" the container.
+   Any other SQL file must be on a mounted volume.
    Example:
 
     ```console
-    export SENZING_DATABASE_URL_PARAMETER="--env SENZING_DATABASE_URL=${SENZING_DATABASE_URL}"
+    export SENZING_SQL_FILES="/opt/senzing/g2/resources/schema/g2core-schema-postgresql-create.sql /app/insert-senzing-configuration.sql"
     ```
-
-### Database support
-
-:thinking: **Optional:**  Some database need additional support.
-For other databases, these steps may be skipped.
-
-1. **Db2:** See
-   [Support Db2](https://github.com/Senzing/knowledge-base/blob/main/HOWTO/support-db2.md)
-   instructions to set `SENZING_OPT_IBM_DIR_PARAMETER`.
-1. **MS SQL:** See
-   [Support MS SQL](https://github.com/Senzing/knowledge-base/blob/main/HOWTO/support-mssql.md)
-   instructions to set `SENZING_OPT_MICROSOFT_DIR_PARAMETER`.
-
-### Run docker container
 
 1. Run docker container.
    Example:
 
     ```console
     sudo docker run \
-      --interactive \
+      --env SENZING_DATABASE_URL="${SENZING_DATABASE_URL}" \
+      --env SENZING_SQL_FILES="${SENZING_SQL_FILES}" \
       --rm \
-      --tty \
-      --volume ${SENZING_DATA_VERSION_DIR}:/opt/senzing/data \
-      --volume ${SENZING_ETC_DIR}:/etc/opt/senzing \
-      --volume ${SENZING_G2_DIR}:/opt/senzing/g2 \
-      --volume ${SENZING_VAR_DIR}:/var/opt/senzing \
-      ${SENZING_DATABASE_URL_PARAMETER} \
-      ${SENZING_NETWORK_PARAMETER} \
-      ${SENZING_OPT_IBM_DIR_PARAMETER} \
-      ${SENZING_OPT_MICROSOFT_DIR_PARAMETER} \
-      ${SENZING_RUNAS_USER_PARAMETER} \
-      senzing/template
+      senzing/postgresql-client
+    ```
+
+## Demonstrate using docker-compose
+
+1. :pencil2: Specify database.
+   *Note:* `POSTGRES_HOST` cannot be "localhost".  It must be an IP address or a hostname that can be resolved.
+   Example:
+
+    ```console
+    export POSTGRES_USERNAME=postgres
+    export POSTGRES_PASSWORD=postgres
+    export POSTGRES_HOST=senzing-postgresql
+    export POSTGRES_PORT=5432
+    export POSTGRES_DB=G2
+    ```
+
+1. Bring up docker-compose formation.
+   Example:
+
+    ```console
+    cd ${GIT_REPOSITORY_DIR}
+    docker-compose up
     ```
 
 ## Develop

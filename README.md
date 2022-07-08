@@ -50,6 +50,7 @@ This repository assumes a working knowledge of:
 ## Demonstrate using Docker
 
 1. :pencil2: Specify database.
+   *Note:* `DATABASE_HOST` cannot be "localhost".  It must be an IP address or a hostname that can be resolved.
    Example:
 
     ```console

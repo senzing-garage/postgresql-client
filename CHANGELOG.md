@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 [markdownlint](https://dlaa.me/markdownlint/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.3] - 2023-09-30
+
+### Changed in 2.2.3
+
+- In `Dockerfile`, updated FROM instruction to `alpine:3.18.4@sha256:eece025e432126ce23f223450a0326fbebde39cdf496a85d8c016293fc851978`
+
 ## [2.2.2] - 2023-05-11
 
 ### Changed in 2.2.2

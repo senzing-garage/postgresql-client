@@ -1,5 +1,17 @@
 # postgresql-client
 
+If you are beginning your journey with
+[Senzing](https://senzing.com/),
+please start with
+[Senzing Quick Start guides](https://docs.senzing.com/quickstart/).
+
+You are in the
+[Senzing Garage](https://github.com/senzing-garage)
+where projects are "tinkered" on.
+Although this GitHub repository may help you understand an approach to using Senzing,
+it's not considered to be "production ready" and is not considered to be part of the Senzing product.
+Heck, it may not even be appropriate for your application of Senzing!
+
 ## Overview
 
 ### Contents
@@ -12,17 +24,17 @@
 ### Legend
 
 1. :thinking: - A "thinker" icon means that a little extra thinking may be required.
-   Perhaps you'll need to make some choices.
+   Perhaps there are some choices to be made.
    Perhaps it's an optional step.
 1. :pencil2: - A "pencil" icon means that the instructions may need modification before performing.
 1. :warning: - A "warning" icon means that something tricky is happening, so pay attention.
 
-## Expectations
+### Expectations
 
 - **Space:** This repository and demonstration require 6 GB free disk space.
 - **Time:** Budget 40 minutes to get the demonstration up-and-running, depending on CPU and network speeds.
 - **Background knowledge:** This repository assumes a working knowledge of:
-  - [Docker](https://github.com/Senzing/knowledge-base/blob/main/WHATIS/docker.md)
+  - [Docker](https://github.com/senzing-garage/knowledge-base/blob/main/WHATIS/docker.md)
 
 ## Demonstrate using Docker
 

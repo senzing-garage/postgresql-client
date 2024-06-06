@@ -4,19 +4,21 @@ FROM ${BASE_IMAGE}
 ENV REFRESHED_AT=2024-03-18
 
 LABEL Name="senzing/postgresql-client" \
-      Maintainer="support@senzing.com" \
-      Version="2.2.3"
+  Maintainer="support@senzing.com" \
+  Version="2.2.3"
 
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
 
 # Install packages via apk.
 
 RUN apk --update add postgresql-client \
- && rm -rf /var/cache/apk/*
+  && rm -rf /var/cache/apk/*
 
 # Copy files from repository.
 
 COPY ./rootfs /
+
+USER 1001
 
 # Runtime execution.
 

@@ -1,7 +1,7 @@
-ARG BASE_IMAGE=alpine:3.19.1@sha256:c5b1261d6d3e43071626931fc004f70149baeba2c8ec672bd4f27761f8e1ad6b
+ARG BASE_IMAGE=alpine:3.19.2@sha256:af4785ccdbcd5cde71bfd5b93eabd34250b98651f19fe218c91de6c8d10e21c5
 FROM ${BASE_IMAGE}
 
-ENV REFRESHED_AT=2024-03-18
+ENV REFRESHED_AT=2024-06-24
 
 LABEL Name="senzing/postgresql-client" \
   Maintainer="support@senzing.com" \

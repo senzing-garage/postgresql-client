@@ -5,7 +5,7 @@ ENV REFRESHED_AT=2024-06-24
 
 LABEL Name="senzing/postgresql-client" \
   Maintainer="support@senzing.com" \
-  Version="2.2.3"
+  Version="2.2.4"
 
 HEALTHCHECK CMD ["/app/healthcheck.sh"]
 

@@ -11,7 +11,7 @@ HEALTHCHECK CMD ["/app/healthcheck.sh"]
 
 # Install packages via apk.
 
-RUN apk --update add postgresql-client \
+RUN apk --update --no-cache add postgresql-client \
   && rm -rf /var/cache/apk/*
 
 # Copy files from repository.

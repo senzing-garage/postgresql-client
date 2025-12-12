@@ -112,7 +112,5 @@
     "unenforceability",
     "xmloption"
   ],
-  "ignorePaths": [
-    ".git/**"
-  ]
+  "ignorePaths": [".git/**"]
 }

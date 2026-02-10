@@ -57,6 +57,7 @@
     "ICLA",
     "isready",
     "JDBC",
+    "kernelsam",
     "LATLONG",
     "LENSRL",
     "LFFE",
@@ -113,5 +114,7 @@
     "xmloption",
     "ZOOMROOM"
   ],
-  "ignorePaths": [".git/**"]
+  "ignorePaths": [
+    ".git/**"
+  ]
 }

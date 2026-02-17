@@ -114,7 +114,5 @@
     "xmloption",
     "ZOOMROOM"
   ],
-  "ignorePaths": [
-    ".git/**"
-  ]
+  "ignorePaths": [".git/**"]
 }
